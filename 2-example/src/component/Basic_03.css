@@ -1,0 +1,39 @@
+.technology
+{
+  margin-top: 20px;
+  background-color: white;
+  border: 2px solid lightgray;
+  width: 550px;
+}
+
+.tech_img
+{
+padding: 20px;
+}
+
+.tech_des
+{
+  padding-left: 20px;
+}
+
+.tech_title
+{
+  color: lightgray;
+}
+
+.tech_inf
+{
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+.dateTime
+{
+  color: lightgray;
+}
+
+.author
+{
+  color: black;
+}

@@ -1,0 +1,19 @@
+.clothes
+{
+  border: 2px solid lightgray;
+  background-color: white;
+  width: 40%;
+  height: 320px;
+}
+
+.clothes_img
+{
+  float: left;
+  line-height: 320px;
+}
+
+.clothes_des
+{
+  float: left;
+  margin-top: 60px;
+}
