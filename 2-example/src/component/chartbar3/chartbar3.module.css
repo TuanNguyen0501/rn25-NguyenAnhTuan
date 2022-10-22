@@ -1,0 +1,41 @@
+.container {
+    margin-top: 50px;
+    width: 100%; 
+}
+
+.column_color{
+   width: 23%;
+   height: 500px; 
+   float: left;
+   margin-right: 20px;
+
+}
+
+.column_icons
+{
+    height: 300px;
+}
+
+.column_app
+{
+    padding-left: 20px;
+
+}
+
+.title
+{
+    color: white;
+    font-size: 40px;
+}
+
+.number
+{
+    margin-top: 10px;
+    color: white;
+}
+
+.rate
+{
+    color: white;
+    padding-left: 20px;
+}

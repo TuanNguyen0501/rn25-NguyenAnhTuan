@@ -1,0 +1,78 @@
+
+.row
+{
+    background-color: lightgray;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.col
+{
+    text-transform: uppercase;
+}
+
+.col1:hover
+{
+    background-color: lightgreen;
+    
+}
+
+.col2
+{
+    margin-top: 100px;
+}
+
+.col2 p:hover
+{
+    color: lightgreen;
+    cursor: pointer;
+}
+
+.row3
+{
+    border-bottom: 1px solid lightgray;
+}
+
+.col3:hover
+{
+    color: lightgreen;
+    border-bottom: 1px solid lightgreen;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.row4
+{
+    width: 300px;
+}
+
+.row_2col
+{
+    display: flex;
+}
+
+.row_left
+{
+    margin-right: 50px;
+    width: 330px;
+}
+
+
+.des_title
+{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.col_des4
+{
+    text-align: initial;
+}
+
+.col4:focus
+{
+    background-color: lightgreen;
+}
+

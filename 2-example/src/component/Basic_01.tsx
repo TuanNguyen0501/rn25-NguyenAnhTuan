@@ -3,23 +3,21 @@ import logo from "./basic-images/1.jpg";
 type Props = {};
 
 function Basic_01({}: Props) {
-  let style = {
-    fontWeight: "bold",
-  };
   return (
-    <div className="clothes">
-      <div className="clothes_img">
-        <img src={logo} alt="Ao so mi" />
+    <>
+      <div className="clothes">
+        <div className="clothes_img">
+          <img src={logo} alt="" />
+        </div>
+        <div className="clothes_des">
+          <p className="product_name">Clothing & Apparel</p>
+          <p>Accessories</p>
+          <p>Bags</p>
+          <p>Kid's Fashion</p>
+          <p>Mens</p>
+        </div>
       </div>
-
-      <div className="clothes_des">
-        <p style={style}>Clothing & Apparel</p>
-        <p>Accessories</p>
-        <p>Bags</p>
-        <p>Kid's Fashion</p>
-        <p>Mens</p>
-      </div>
-    </div>
+    </>
   );
 }
 

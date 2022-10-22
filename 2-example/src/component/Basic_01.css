@@ -10,6 +10,7 @@
 {
   float: left;
   line-height: 320px;
+  margin-right: 100px;
 }
 
 .clothes_des
@@ -17,3 +18,10 @@
   float: left;
   margin-top: 60px;
 }
+
+.product_name
+{
+  font-size: 30px;
+  color: rgb(120, 5, 5);
+}
+
