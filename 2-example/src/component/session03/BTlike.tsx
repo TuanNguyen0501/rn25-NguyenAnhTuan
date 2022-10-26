@@ -7,7 +7,7 @@ interface IState {
   like: boolean;
 }
 
-export default class BTlike extends Component<IProps, IState> {
+export default class BTlikecp extends Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
 
