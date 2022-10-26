@@ -7,9 +7,9 @@ const SignupSchema = Yup.object({
     .min(3, "The name must be unique and between 3 - 128 characters")
     .max(128, "The name must be unique and between 3 - 128 characters")
     .matches(
-      /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/ ||
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-      "Enter Phone number or Email(need @gmail.com)"
+      /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+       ,
+      "Must enter Phone number (Not character)"
     )
     .required("The name is not blank"),
 
@@ -17,6 +17,10 @@ const SignupSchema = Yup.object({
     .required("No password provided.")
     .min(8, "Password is too short - should be 8 chars minimum.")
     .matches(/[a-zA-Z]/, "Password can only contain Latin letters."),
+
+    checkbox: Yup.boolean()
+    .oneOf([true], "You must accept checkbox")
+    .required("The name is not blank"),
 });
 
 function Form_06() {
@@ -67,7 +71,7 @@ function Form_06() {
           <input
             className="w-100"
             name="name"
-            placeholder="Email or Phone Number"
+            placeholder="Enter Phone Number"
             value={formik.values.name}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}

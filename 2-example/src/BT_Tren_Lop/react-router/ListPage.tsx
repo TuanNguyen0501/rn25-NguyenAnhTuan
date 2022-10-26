@@ -58,7 +58,7 @@ function ListPage() {
   return (
     <>
     <table className="table table-dark table-striped mt-5">
-    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <thead className="table_header">
             <tr>
               <th className="py-5 px-6 w-[20%]">ID</th>
               <th className="py-5 px-6 w-[50%]">Name</th>
@@ -70,9 +70,9 @@ function ListPage() {
               return (
                 <tr
                   key={`userID-${user.id}`}
-                  className="bg-white border-b dark:bg-green-800 dark:border-green-700"
+                  className="table_id"
                 >
-                  <th className="py-4 px-6 font-medium text-gray-900 dark:text-white">
+                  <th className="user_id">
                     {user.id}
                   </th>
                   <td className="py-4 px-6">{user.name}</td>
